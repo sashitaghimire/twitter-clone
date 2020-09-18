@@ -10,8 +10,10 @@
     padding:10px;
 }
 
-.post__body >img {
-    border-radius: 2000px;
+.header__image {
+    border-radius: 8px;
+    height: 300px;
+    width: 400px;
 }
 
 .post__footer{

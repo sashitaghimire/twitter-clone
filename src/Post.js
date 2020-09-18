@@ -20,19 +20,20 @@ function Post({
     return (
         <div className="post">
             <div className="post__avatar">
-                <Avatar src="https://sashitaghimire-2d83a.web.app/images/IG_Sashita.jpg" />
+                <Avatar src={avatar} />
             </div> 
             <div className="post__body">
                 <div className="post__header">
                     <div className="post__headerText">
-                        <h3>Sashita Ghimire {" "}
-                            <span className="post__headerSpecial"><VerifiedUserIcon className="post__badge" /> @sashita</span>
+                        <h3>{displayName} {" "}
+                            <span className="post__headerSpecial">
+                                {verified && <VerifiedUserIcon className="post__badge" />}@{username}</span>
                         </h3>
                     </div>
                     <div className="post__headerDescription">
-                        <p>Let's build twitter clone</p>
+                         <p>{text}</p>
                     </div>
-                    <img src="https://media.giphy.com/media/CjmvTCZf2U3p09Cn0h/giphy.gif" alt="gify-lets"/>
+                    <img className="header__image"src={image} alt="gify-lets"/>
                     <div className="post__footer">
                         <ChatBubbleOutlineIcon fontSize="small"/>
                         <RepeatIcon fontSize="small" />
