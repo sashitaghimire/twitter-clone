@@ -1,6 +1,6 @@
 .feed{
     flex: 0.4;
-    border-right: 2px solid var(--twitter-background);
+    border-right: 1px solid var(--twitter-background);
     min-width: fit-content ;
     overflow-y: scroll;
 }
@@ -10,7 +10,7 @@
     display: none;
 }
 /* hide scrollbar for IE , edge and firefox */
-.fee{
+.feed{
     -ms-oveflow-style:none;
     scrollbar-width: none;
 }
@@ -24,3 +24,8 @@
     padding:15px 20px;
 
 }
+
+.feed__header > h2 {
+    font-size: 20px;
+    font-weight: 800;
+  }
